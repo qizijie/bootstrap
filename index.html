@@ -4,6 +4,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+	  <!-- width:viewport的宽度
+   width=divice-width:viewport的宽度
+   initial-scale:初始的缩放比例
+   maxmum-scale:允许用户缩放的最大比例
+   user-scalable:是否允许用户手动缩放
+   --->
     <title>1208</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!--[if lt IE 9]>
@@ -60,6 +66,9 @@
 			<div class="container">
 				<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header">
+					<!---   navbar-toggle:【触发】按钮，会有下拉导航    data-toggle:交替执行某动作，collapse:展开和收缩
+          data-target:目标对象(自己定义一个名字-->
+
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 						<span class="sr-only">Toggle navigation</span>
 						<span class="icon-bar"></span>
@@ -323,13 +332,7 @@
 			  wrap:true
 			})
   		
-  		$('#test').click(function(){
-  			$('.carousel').carousel('cycle');
-  		})
-  		$('#test2').click(function(){
-  			$('.carousel').carousel('pause')
-  		})
-
+  	
 
   	    $("#damu-nav > li > a").click(function(e){
         var href = $(this).attr("href");
